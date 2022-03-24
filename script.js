@@ -1,5 +1,6 @@
 const computerSelection = computerPlay();
-const playerSelection = "rock";
+const playerSelection = prompt('Choose between Rock, Paper and Scissors', 'rock');
+let result = "";
 console.log(computerSelection);
 console.log(playerSelection);
 
@@ -16,7 +17,7 @@ function computerPlay() {
 }
 
 function playRound(playerSelection, computerSelection) {
-    let result = "";
+
     if (playerSelection.toLowerCase() === computerSelection.toLowerCase()) {
         result ="It's a draw ! " +  playerSelection + " is equal to " + computerSelection;
         return result
@@ -40,5 +41,14 @@ function playRound(playerSelection, computerSelection) {
         return result 
     }
 }
+// console.log(playRound(playerSelection, computerSelection));
 
-console.log(playRound(playerSelection, computerSelection));
+function game() {
+    for (let i = 0; i < 5; i++) {
+        playRound(playerSelection,computerSelection);
+        console.log(result);
+    }
+    console.log(result);
+}
+
+console.log(game());
