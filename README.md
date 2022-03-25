@@ -2,7 +2,7 @@
 
 A simple yet interesting challenge from The Odin Project. The goal is to build a program to plya rock paper scissors against the computer, in five rounds.
 
-##Learning outcomes
+## Learning outcomes
 
 - I learned how to generate pseudo-randomness and use it to attribute a value depending on the generated number.
 - I learned how to call function, pass argument and use the for loop.
