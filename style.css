@@ -28,3 +28,59 @@ p {
     font-size: 1.5rem;
     font-weight: 300;
 }
+
+.display-result {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-result > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.results {
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.score {
+    color: black;
+    width: fit-content;
+    background-color: hsla(0, 0%, 100%, 0.7);
+    border-radius: 5px;
+    padding: .2rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.launch-game {
+    min-height: 1.6rem;
+    width: fit-content;
+    font-size: 2rem;
+    font-family: inherit;
+    border: none;
+    border-radius: 100vh;
+    padding: .5rem .8rem;
+    background-color: hsla(0, 0%, 100%, 1);
+    transition: all 0.35s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.launch-game:hover {
+    transform: scale(105%);
+    background-color: hsla(0, 0%, 100%, 0.45);
+    color: rgb(1, 2, 20);
+    filter: drop-shadow(0 0 0.75rem hsla(0, 0%, 0%, 0.438));
+}

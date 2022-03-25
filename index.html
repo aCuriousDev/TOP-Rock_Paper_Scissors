@@ -13,8 +13,13 @@
     </header>
     <section>
         <p>Open your console and try it ! <em>Usually press F12 to open it.</em></p>
+        <button class="launch-game" id="launch-game" onclick="game()">Start Battle</button>
     </section>
-    
+    <div class="display-result">
+        <div><p>Player Score</p><p class="score" id="player-score"></p></div>
+        <div><p>Computer Score</p><p class="score" id="computer-score"></p></div>
+    </div>
+    <p class="results" id="results"></p>
     <script src="script.js"></script>
 </body>
 </html>
