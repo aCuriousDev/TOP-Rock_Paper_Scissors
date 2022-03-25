@@ -1,3 +1,4 @@
+// Initiate all variables
 let computerSelection ;
 let playerSelection ;
 let displayPlayerScore = document.getElementById("player-score");
@@ -9,7 +10,7 @@ let computerScore = 0;
 let playerScore = 0;
 let result = "";
 
-
+// Computer pick a random option
 function computerPlay() {
     let randNum = Math.floor(Math.random()*3);
     if (randNum === 0 ) {
@@ -21,6 +22,7 @@ function computerPlay() {
     }
 }
 
+// Play a single round and change score accordingly
 function playRound(playerSelection, computerSelection) {
 
     if (playerSelection.toLowerCase() === computerSelection.toLowerCase()) {
@@ -53,8 +55,8 @@ function playRound(playerSelection, computerSelection) {
     }
     
 }
-// console.log(playRound(playerSelection, computerSelection));
 
+// Play the game with five rounds and determine who's the winner
 function game() {
     playerScore = 0;
     computerScore = 0;
