@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;400;700;900&display=swap');
+
+*, ::after, ::before {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(217deg, rgba(0, 102, 255, 0.8), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(34, 3, 209, 0.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(49, 12, 214, 0.8), rgba(0,0,255,0) 70.71%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 4rem;
+}
+ 
+p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}

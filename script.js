@@ -1,5 +1,5 @@
 let computerSelection = computerPlay();
-let playerSelection = prompt('Choose between Rock, Paper and Scissors', 'rock');
+// let playerSelection = prompt('Choose between Rock, Paper and Scissors', 'rock');
 let computerScore = 0;
 let playerScore = 0;
 let result = "";
@@ -74,4 +74,4 @@ function game() {
     return 'Player : ' + playerScore + ' | ' + 'Computer : ' + computerScore; 
 }
 
-console.log(game());
+// console.log(game());
